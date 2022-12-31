@@ -15,7 +15,7 @@ const form = useForm({
 });
 
 const createProduct = () => {
-    form.put(route('products.store'), {
+    form.post(route('products.store'), {
         preserveScroll: true,
         onSuccess: () => form.reset(),
         onError: () => {

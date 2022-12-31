@@ -47,7 +47,7 @@ class ProductController extends Controller
         $product->photo = $photo;
         $product->save();
 
-        return Redirect::route('products.show');
+        return Redirect::route('products.index');
     }
 
     /**
